@@ -1,0 +1,19 @@
+<div class="breadcrumbs">
+    <ul>
+                    <li class="home">
+                            <a href="http://magento.jeniusdesign.com/index.php/" title="Go to Home Page">Home</a>
+                                        <span>/ </span>
+                        </li>
+                    <li class="category10">
+                            <a href="http://magento.jeniusdesign.com/index.php/furniture.html" title="">Furniture</a>
+                                        <span>/ </span>
+                        </li>
+                    <li class="category22">
+                            <a href="http://magento.jeniusdesign.com/index.php/furniture/living-room.html" title="">Living Room</a>
+                                        <span>/ </span>
+                        </li>
+                    <li class="product">
+                            <strong>Ottoman</strong>
+                                    </li>
+            </ul>
+</div>

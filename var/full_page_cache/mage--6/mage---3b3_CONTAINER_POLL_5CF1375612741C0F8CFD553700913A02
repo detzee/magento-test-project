@@ -1,0 +1,46 @@
+<script type="text/javascript">
+//<![CDATA[
+    function validatePollAnswerIsSelected()
+    {
+        var options = $$('input.poll_vote');
+        for( i in options ) {
+            if( options[i].checked == true ) {
+                return true;
+            }
+        }
+        return false;
+    }
+//]]>
+</script>
+<div class="block block-poll">
+    <div class="block-title">
+        <strong><span>Community Poll</span></strong>
+    </div>
+    <form id="pollForm" action="http://magento.jeniusdesign.com/index.php/poll/vote/add/poll_id/2/" method="post" onsubmit="return validatePollAnswerIsSelected();">
+        <div class="block-content">
+            <p class="block-subtitle">What is your favorite Magento feature?</p>
+                        <ul id="poll-answers">
+                                <li>
+                    <input type="radio" name="vote" class="radio poll_vote" id="vote_5" value="5" />
+                    <span class="label"><label for="vote_5">Layered Navigation</label></span>
+                </li>
+                                <li>
+                    <input type="radio" name="vote" class="radio poll_vote" id="vote_6" value="6" />
+                    <span class="label"><label for="vote_6">Price Rules</label></span>
+                </li>
+                                <li>
+                    <input type="radio" name="vote" class="radio poll_vote" id="vote_7" value="7" />
+                    <span class="label"><label for="vote_7">Category Management</label></span>
+                </li>
+                                <li>
+                    <input type="radio" name="vote" class="radio poll_vote" id="vote_8" value="8" />
+                    <span class="label"><label for="vote_8">Compare Products</label></span>
+                </li>
+                            </ul>
+            <script type="text/javascript">decorateList('poll-answers');</script>
+                        <div class="actions">
+                <button type="submit" title="Vote" class="button"><span><span>Vote</span></span></button>
+            </div>
+        </div>
+    </form>
+</div>
