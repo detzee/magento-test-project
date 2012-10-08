@@ -68,7 +68,7 @@ ul{
 .bannerAds{
 	left: 135px;
     position: absolute;
-    top: 90px;
+    top: 79px;
 	
 }
 
@@ -194,23 +194,27 @@ ul{
 	font-family: MuseoSlab500;
 	font-size: 14px;
 	color: #f59439;
+	float: left;
 	
 }
 
 #navMenu .aboveNavMenu .findPeetImg{
 	position: relative;
-	top: 10px;
+	top: -5px;
+	
 }
 
 #navMenu .aboveNavMenu nav{
 	float: right;
 	color: #fff;
+	
+	margin-top: 5px;
 }
 
 #navMenu .aboveNavMenu nav a{
 	color: #fff;
 	font-size: 13px;
-
+	line-height: 30px;
 }
 
 #navMenu .aboveNavMenu nav a:hover{
@@ -258,6 +262,7 @@ ul{
 	top: 25px;
 	padding-right: 15px;
 	z-index: 999;
+	text-align: left;
 }
 
 #footer .footerMenu h3{
@@ -273,6 +278,10 @@ ul{
 	color: #c8a578;
 	line-height: 22px;
 	font-size: 13px;
+}
+
+#footer .footerJoinUsMenu a{
+	line-height: 30px;
 }
 
 #footer .footerMenu a:hover{
@@ -298,7 +307,6 @@ ul{
 
 #footer .footerJoinUsMenu img{
 	position: relative;
-	top: 8px;
 	padding-right: 10px;
 }
 
@@ -332,6 +340,7 @@ ul{
 	width: 970px;
 	margin: 0 auto;
 	height: 382px;
+	padding: 0;
 }
 
 #content .promo li{

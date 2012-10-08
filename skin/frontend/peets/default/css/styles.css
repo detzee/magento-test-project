@@ -91,7 +91,7 @@ ul,ol         { list-style:none; }
 .page-print { background:#fff; padding:20px; text-align:left; }
 .page-popup { padding:20px; text-align:left; }
 .page-empty { background:#fff; padding:20px; text-align:left; }
-.main { margin:0 0 14px; min-height:350px; background-image:url(../images/bkg_cols.gif); background-color:#fff; background-repeat:repeat-y; border:1px solid #cfcfcf; text-align:left; }
+.main {text-align:left; }
 .sidebar { min-height:350px; }
 
 /* Base Columns */
@@ -850,8 +850,8 @@ ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-re
 
 /* Top Shopping Cart */
 .top-cart { float:right; /* width:360px; */ position:relative; padding-left:7px; }
-.top-cart .block-title { white-space:nowrap; /* _width:242px; min-width:242px; */ cursor:pointer; background:#fff url(../images/bkg_topcart.gif) 0 3px no-repeat; color:#1e75b4; font-weight:bold; font-size:11px; text-transform:uppercase; padding:0 0 0 18px; line-height:18px; height:18px; }
-.top-cart .block-title strong { display:block; padding-right:10px; background:url(../images/bkg_header-panel.gif) 100% -71px no-repeat; font-size:11px; color:#1e75b4; font-weight:bold; text-decoration:none; }
+.top-cart .block-title { white-space:nowrap; /* _width:242px; min-width:242px; */ cursor:pointer; background:url(../images/buyicon.png) 0 3px no-repeat; color:#1e75b4; font-weight:bold; font-size:11px; text-transform:uppercase; padding:0 0 0 30px; line-height:30px;}
+.top-cart .block-title strong { display:block; font-size:11px ; color: #fff; font-weight:bold; text-decoration:none; }
 .top-cart .block-title.expanded { background-position:0 3px !important; }
 .top-cart .block-title.expanded strong { background-position:100% -126px !important; color:#d33911; }
 /* .top-cart .no-items { cursor:default; }
@@ -2164,7 +2164,7 @@ ul.cms-menu.type-square ul { list-style-type:square; }
 .form-subscribe .v-fix { text-align:left; padding-right:5px; }
 .form-subscribe a { color:#777; }
 
-.footer-container { margin:0 0 20px; text-align:left; background:#f8f8f8; border:1px solid #cfcfcf; padding:14px 17px 12px; }
+.footer-container { margin:0; text-align:left; padding:14px 17px 12px; }
 .footer { background:url(../images/bkg_footer.gif) repeat-y 200px 0; }
 .footer a {}
 .footer a:hover { text-decoration:none; }
