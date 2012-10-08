@@ -1,0 +1,455 @@
+body{
+	background: url("../images/background.png") repeat;
+	margin: 0;
+	font-family: Arial;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+	
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face{
+    font-family: MuseoSlab500;
+    src: url("../fonts/Museo_Slab_500.otf");
+    font-weight: 500;
+}
+
+@font-face{
+    font-family: MuseoSlab300;
+    src: url("../fonts/Museo_Slab_300.otf");
+    font-weight: 300;
+}
+
+.clear{
+	clear: both;
+}
+
+#wrapper{
+	margin: 0 auto;
+    position: relative;
+    width: 1470px;
+}
+
+#banner-fade{
+	margin: 0 auto;
+}
+
+#slider ul{
+	margin: 0;
+	padding: 0;
+}
+
+.bjqs-next a{
+	background: url("../images/next.png") no-repeat;
+	height: 80px;
+	width: 22px;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.bjqs-prev a{
+	background: url("../images/prev.png") no-repeat;
+	height: 80px;
+	width: 22px;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.bannerAds{
+	left: 135px;
+    position: absolute;
+    top: 90px;
+	
+}
+
+.bannerAds .img1{
+	left: 50px;
+    position: absolute;
+    top: 340px;
+}
+
+.bannerAds a.shopNow{
+	text-transform: uppercase;
+	color: #fff;
+	position: absolute;
+	text-decoration: none;
+	background: #a9861d;
+	padding: 7px 10px;
+	top: 376px;
+	left: 180px;
+	box-shadow: 2px 2px 2px #1a1827;
+	font-size: 11px;
+}
+
+.bannerAds a:hover{
+	text-decoration: underline;
+}
+
+.bannerAds h2{
+	color: #fff;
+	position: absolute;
+	top: 85px;
+	left: 55px;
+	font-family: MuseoSlab500;
+	margin: 0;
+	font-size: 43px;
+	font-weight: normal;
+}
+
+.bannerAds h3{
+	position: absolute;
+	font-family: MuseoSlab500;
+	color: #fff;
+	top: 260px;
+	left: 55px;
+	margin: 0;
+	font-weight: normal;
+	font-size: 21px;
+}
+
+.bannerAds span.price{
+	position: absolute;
+	color: #fff;
+	top: 355px;
+	left: 180px;
+	font-size: 12px;
+}
+
+.bannerAds p.description{
+	color: #fff;
+	position: absolute;
+	top: 420px;
+	left: 180px;
+	width: 275px;
+	font-family: MuseoSlab300;
+	font-size: 15px;
+	margin: 0;
+}
+
+#logo{
+	position: absolute;
+	left: 250px;
+	z-index: 999;
+}
+
+#navMenu{
+	background: url("../images/navmenubg.png") repeat-x;
+	height: 90px;
+	width: 1170px;
+	position: absolute;
+	z-index: 99;
+	left: 150px;
+}
+
+#navMenu ul{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	left: 280px;
+	top: 50px;
+	width: 780px;
+	overflow: hidden;
+}
+
+#navMenu ul li{
+	float: left;
+	list-style: none;
+	padding: 8px 10px;
+	
+}
+
+#navMenu ul li a{
+	font-family: MuseoSlab500;
+	font-size: 14px;
+	color: #e8e2cf;
+	text-transform: uppercase;
+	padding: 8px 10px;
+}
+
+#navMenu ul li a:hover{
+	color: #fff;
+	background: #633d20;
+}
+
+#navMenu .aboveNavMenu{
+	position: absolute;
+	width: 780px;
+	left: 280px;
+	border-bottom: 1px solid #695a52;
+	height: 40px;
+}
+
+#navMenu .aboveNavMenu .findPeet{
+	padding-top: 10px;
+	font-family: MuseoSlab500;
+	font-size: 14px;
+	color: #f59439;
+	
+}
+
+#navMenu .aboveNavMenu .findPeetImg{
+	position: relative;
+	top: 10px;
+}
+
+#navMenu .aboveNavMenu nav{
+	float: right;
+	color: #fff;
+}
+
+#navMenu .aboveNavMenu nav a{
+	color: #fff;
+	font-size: 13px;
+
+}
+
+#navMenu .aboveNavMenu nav a:hover{
+	text-decoration: underline;
+}
+
+#navMenu .aboveNavMenu nav .cart{
+	position: relative;
+	top: 5px;
+	padding-left: 40px;
+}
+
+#search{
+	height: 26px;
+	width: 180px;
+	float: right;
+	position: relative;
+	right: 90px;
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 13px;
+	font-family: Arial;
+	background: none;
+	top: 15px;
+	padding-left: 10px;
+}
+
+.searchIcon{
+	position: relative;
+	float: right;
+	right: 115px;
+    top: 20px;
+}
+
+#footer{
+	background: url("../images/footerbg.png") repeat-x;
+	height: 316px;
+	padding-left: 250px;
+}
+
+#footer .footerMenu{
+	width: 160px;
+	float: left;
+	position: relative;
+	top: 25px;
+	padding-right: 15px;
+	z-index: 999;
+}
+
+#footer .footerMenu h3{
+	font-family: MuseoSlab500;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #f3e4d1;
+	font-weight: 500;
+	margin: 0 0 12px 0;
+}
+
+#footer .footerMenu a{
+	color: #c8a578;
+	line-height: 22px;
+	font-size: 13px;
+}
+
+#footer .footerMenu a:hover{
+	text-decoration: underline;
+}
+
+#footer .footerPrimaryLinks{
+	padding: 0 96px 0 0;
+}
+
+#footer .footerPrimaryLinks a{
+	font-weight: bold;
+	
+}
+
+#footer .footerJoinUsMenu{
+	padding: 0;
+}
+
+#footer .footerJoinUsMenu ul li{
+	padding-bottom: 10px;
+}
+
+#footer .footerJoinUsMenu img{
+	position: relative;
+	top: 8px;
+	padding-right: 10px;
+}
+
+#footer .copyright{
+	position: absolute;
+	padding-top: 270px;
+	font-size: 10px;
+}
+
+#footer .copyright a{
+	color:  #f3e4d1;
+	text-transform: uppercase;
+	padding-left: 15px;
+}
+
+#footer .copyright a:hover{
+	text-decoration: underline;
+}
+
+#footer .copyright span{
+	color: #f3e4d1;
+}
+
+#content{
+	overflow: hidden;
+	margin-bottom: 70px;
+
+}
+
+#content .promo{
+	width: 970px;
+	margin: 0 auto;
+	height: 382px;
+}
+
+#content .promo li{
+	float: left;
+	padding: 0 4px;
+}
+
+#content .promo li:first-child{
+	padding-left: 0;
+}
+
+#content .promo li:last-child{
+	padding-right: 0;
+}
+
+#content .wideBannerPromo{
+	width: 970px;
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+
+#content .wideBannerPromo h3{
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 24px;
+	position: absolute;
+	font-family: MuseoSlab500;
+	padding-top: 35px;
+	margin: 0 auto;
+	padding-left: 220px;
+}
+
+#content .promo .thumbs{
+	padding-left: 2px;
+	padding-top: 26px;
+}
+
+#content .promo h3{
+	font-family: MuseoSlab500;
+	font-size: 20px;
+	color: #fff;
+	font-weight: 500;
+	width: 150px;
+	padding: 10px 0 10px 20px;
+	margin: 0;
+}
+
+#content .promo a{
+	color: #fff;
+	font-size: 13px;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+#content .promo a:hover{
+	text-decoration: underline;
+}
+
+#content .promo1{
+	background: url("../images/promo1bg.png") no-repeat;
+	height: 382px;
+	width: 192px;
+}
+
+#content .promo2{
+	background: url("../images/promo2bg.png") no-repeat;
+	height: 382px;
+	width: 198px;
+}
+
+#content .promo3{
+	background: url("../images/promo3bg.png") no-repeat;
+	height: 382px;
+	width: 356px;
+}
+
+#content .promo4{
+	background: url("../images/promo4bg.png") no-repeat;
+	height: 382px;
+	width: 199px;
+}
+
+#content .promo .description{
+	color: #fff;
+	font-size: 13px;
+	padding: 5px 0 5px 10px;
+}
+
+#content .promo .shopNow{
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+	background: #a9861d;
+	padding: 5px 10px;
+	box-shadow: 2px 2px 2px #1a1827;
+	font-size: 11px;
+}
+
+#content .promo1 .description{
+	width: 176px;
+	margin: 0;
+}
+
+#content .promo2 .description{
+	width: 176px;
+	margin: 0;
+}
+
+#content .promo3 .description{
+	width: 300px;
+	margin: 0;
+}
+
+#content .promo3 img{
+	cursor: pointer;
+}
+
+#content .promo4 .description{
+	width: 176px;
+	margin: 0;
+}
