@@ -35,6 +35,7 @@ Default layout, loads most of the pages
         <block type="page/html" name="root" output="toHtml" template="page/3columns.phtml">
 
             <block type="page/html_head" name="head" as="head">
+            	<action method="addJs"><script>jquery-1.7.1.min.js</script></action>
                 <action method="addJs"><script>prototype/prototype.js</script></action>
                 <action method="addJs"><script>lib/ccard.js</script></action>
                 <action method="addJs"><script>prototype/validation.js</script></action>
@@ -54,6 +55,7 @@ Default layout, loads most of the pages
                 <action method="addItem"><type>skin_js</type><name>js/scripts.js</name></action>
 
                 <action method="addCss"><stylesheet>css/styles.css</stylesheet></action>
+                <action method="addItem"><type>skin_css</type><name>css/style.css</name></action>
                 <action method="addItem"><type>skin_css</type><name>css/styles-ie.css</name><params/><if>lt IE 8</if></action>
                 <action method="addCss"><stylesheet>css/widgets.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/print.css</stylesheet><params>media="print"</params></action>

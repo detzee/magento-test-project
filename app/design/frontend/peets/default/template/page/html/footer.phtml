@@ -24,9 +24,28 @@
  * @license     http://www.magentocommerce.com/license/enterprise-edition
  */
 ?>
-<div class="footer-container">
-    <div class="footer">
-        <?php echo $this->getChildHtml() ?>
+<div id="footer">
+    <div class="footerPrimaryLinks footerMenu">
+    	<?php echo $this->getLayout()->createBlock("cms/block")->setBlockId("footer-account-menu")->toHtml()?>
+    </div>
+    <div class="footerShopMenu footerMenu">
+    	<?php echo $this->getLayout()->createBlock("cms/block")->setBlockId("footer-shop-menu")->toHtml()?>
+    </div>
+    
+    <div class="footerAboutUsMenu footerMenu">
+    	<?php echo $this->getLayout()->createBlock("cms/block")->setBlockId("footer-about-menu")->toHtml()?>
+    </div>
+    
+    <div class="footerForBusinessMenu footerMenu">
+    	<?php echo $this->getLayout()->createBlock("cms/block")->setBlockId("footer-business-menu")->toHtml()?>
+    </div>
+    
+    <div class="footerJoinUsMenu footerMenu">
+    	<?php echo $this->getLayout()->createBlock("cms/block")->setBlockId("footer-join-menu")->toHtml()?>
+    </div>
+    
+    <div class="copyright">
+    	<?php echo $this->getLayout()->createBlock("cms/block")->setBlockId("copyright")->toHtml()?>
     </div>
 </div>
-<address class="copyright"><?php echo $this->getCopyright() ?></address>
+

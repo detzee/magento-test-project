@@ -27,28 +27,20 @@
  * @var Mage_Page_Block_Html_Header $this
  */
 ?>
-<div class="header-container">
-    <div class="header-panel">
-        <div class="switches"><?php echo $this->getChildHtml('switches') ?></div>
-        <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?></p>
-        <?php echo $this->getChildHtml('accountLinks') ?>
-    </div>
-    <div class="header">
-        <div class="branding">
-        <?php if ($this->getIsHomePage()):?>
-            <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
-            <?php else:?>
-            <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
-            <?php endif?>
-            <?php echo $this->getChildHtml('headerCallout') ?>
-        </div>
-        <div class="quick-access">
-            <div class="checkout-link"><?php echo $this->getChildHtml('checkoutLinks') ?></div>
-            <?php echo $this->getChildHtml('topCart') ?>
-            <?php echo $this->getChildHtml('topLinks') ?>
-            <?php echo $this->getChildHtml('topSearch') ?>
-        </div>
-    </div>
-    <?php echo $this->getChildHtml('topMenu') ?>
-    <?php echo $this->getChildHtml('topContainer') ?>
+<div id="header">
+	<img src="<?php echo $this->getLogoSrc()?>" id="logo" />
+	<div id="navMenu">
+		<div class="aboveNavMenu">
+			<a href="#FINDPEETS" class="findPeet"><img src="<?php echo $this->getSkinUrl('images/findpeet.png')?>" class="findPeetImg"  />Find Peet's</a>
+			<nav>
+				<a href="#AccountManager"><?php echo $this->getChildHtml('welcome') ?></a>
+				<?php echo $this->getChildHtml('topCart') ?>
+			</nav>
+		</div>
+		<?php //echo $this->getChildHtml('topMenu')?>
+		<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('main-navigation')->toHtml() ?>
+		<img src="<?php echo $this->getSkinUrl('images/searchicon.png')?>" class="searchIcon" />
+		<?php echo $this->getChildHtml('topSearch') ?>
+	</div>
+	
 </div>
